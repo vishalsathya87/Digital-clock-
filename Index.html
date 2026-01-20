@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="hero">
+    <div class="container">
+
+
+        <div class="shape pink"></div>
+        <div class="shape blue"></div>
+
+
+        <!-- CLOCK -->
+        <div class="clock" id="clockBox">
+            <div>
+                <span id="hours">00</span>
+                <p>HOURS</p>
+            </div>
+
+
+            <span class="colon">:</span>
+
+
+            <div>
+                <span id="minutes">00</span>
+                <p>MINS</p>
+            </div>
+
+
+            <span class="colon">:</span>
+
+
+            <div>
+                <span id="seconds">00</span>
+                <p>SEC</p>
+            </div>
+
+
+            <div>
+                <span id="ampm"></span>
+            </div>
+        </div>
+
+
+        <!-- STOPWATCH -->
+        <div class="clock hidden" id="stopwatchBox">
+            <span id="swTime">00:00:00</span>
+        </div>
+
+
+        <!-- CONTROLS -->
+        <div class="controls">
+            <button onclick="toggleFormat()">12H / 24H</button>
+            <button onclick="switchMode()">Clock / Stopwatch</button>
+            <button onclick="startSW()">Start</button>
+            <button onclick="stopSW()">Stop</button>
+            <button onclick="resetSW()">Reset</button>
+        </div>
+
+
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
